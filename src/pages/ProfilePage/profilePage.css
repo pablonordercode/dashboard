@@ -1,0 +1,143 @@
+/* ProfilePage.css */
+
+/* Estilo geral da página */
+.profile-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4f4f9;
+    padding: 20px;
+  }
+  
+  /* Container do cartão de perfil */
+  .profile-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+  }
+  
+  /* Título do perfil */
+  .profile-card h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Estilo dos campos de perfil */
+  .profile-fi {
+    margin-bottom: 20px;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* Estilo para os rótulos dos campos */
+  .profile-fi label {
+    font-size: 16px;
+    color: #555;
+    font-weight: 500;
+    margin-right: 10px;
+    flex-basis: 30%;
+  }
+  
+  /* Estilo dos campos de entrada (input) */
+  .profile-fi input {
+    padding: 10px;
+    font-size: 16px;
+    width: 60%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    transition: border-color 0.3s ease;
+  }
+  
+  .profile-fi input:focus {
+    border-color: #4e73df;
+  }
+  
+  /* Estilo do texto exibido (quando não está em modo de edição) */
+  .profile-fi p {
+    font-size: 16px;
+    color: #333;
+    flex-basis: 60%;
+  }
+  
+  /* Estilo das ações (botões) */
+  .profile-actions {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  /* Estilo dos botões */
+  .btn-save,
+  .btn-edit,
+  .btn-cancel {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Botão salvar */
+  .btn-save {
+    background-color: #28a745;
+    color: white;
+  }
+  
+  .btn-save:hover {
+    background-color: #218838;
+  }
+  
+  /* Botão editar */
+  .btn-edit {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .btn-edit:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Botão cancelar */
+  .btn-cancel {
+    background-color: #dc3545;
+    color: white;
+  }
+  
+  .btn-cancel:hover {
+    background-color: #c82333;
+  }
+  
+  /* Responsividade */
+  @media (max-width: 768px) {
+    .profile-card {
+      padding: 20px;
+    }
+  
+    .profile-fi {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .profile-fi label,
+    .profile-fi input,
+    .profile-fi p {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  
+    .profile-actions {
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+  

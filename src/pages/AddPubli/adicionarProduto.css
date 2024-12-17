@@ -1,0 +1,99 @@
+/* Estilo principal da página */
+.post-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-color: #f4f5f7;
+  font-family: 'Roboto', sans-serif;
+  min-height: 100vh;
+}
+
+/* Contêiner do formulário */
+.form__cont {
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  width: 100%;
+  max-width: 500px;
+}
+
+/* Estilo dos rótulos */
+form label {
+  display: block;
+  font-size: 16px;
+  font-weight: 500;
+  color: #333333;
+  margin-bottom: 13px;
+  margin-top: -12px;
+}
+
+/* Estilo dos inputs de texto */
+.text-titulo, .text-descricao, .text-area {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 14px;
+  color: #333;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.text-titulo:focus, .text-descricao:focus, .text-area:focus {
+  border-color: #6c63ff;
+  box-shadow: 0 0 3px #6c63ff;
+}
+
+/* Estilo do select */
+.select-categoria {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 14px;
+  color: #333;
+  background-color: #fff;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.select-categoria:focus {
+  border-color: #6c63ff;
+  box-shadow: 0 0 3px #6c63ff;
+}
+
+/* Estilo do input de arquivo */
+input[type="file"] {
+  display: block;
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+/* Estilo do botão */
+button {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  background-color: #6c63ff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background-color: #574bdb;
+  transform: scale(1.02);
+}
+
+button:active {
+  background-color: #453abf;
+  transform: scale(0.98);
+}

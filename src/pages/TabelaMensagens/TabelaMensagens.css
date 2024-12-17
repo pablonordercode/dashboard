@@ -1,0 +1,59 @@
+.tabela-mensagens-container {
+    margin: 2rem auto;
+    padding: 2rem;
+    max-width: 1200px;
+    margin-left: 270px;
+    background: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.tabela-mensagens {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.tabela-mensagens th,
+.tabela-mensagens td {
+    text-align: left;
+    padding: 1rem;
+    border-bottom: 1px solid #ddd;
+}
+
+.tabela-mensagens th {
+    background: #4caf50;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.tabela-mensagens tr:nth-child(even) {
+    background: #f2f2f2;
+}
+
+.tabela-mensagens tr:hover {
+    background: #eaf4ea;
+    cursor: pointer;
+}
+
+.no-data {
+    text-align: center;
+    color: #666;
+    padding: 1rem;
+    font-style: italic;
+}
+
+.tabela-mensagens tr:last-child td {
+    border-bottom: none;
+}
